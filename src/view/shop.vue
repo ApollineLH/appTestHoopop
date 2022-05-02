@@ -13,6 +13,8 @@
 
 <script>
 import Nav from '../components/nav.vue';
+import Json from '../db/products.json';
+
 
 export default {
   name: 'Shop',
@@ -21,13 +23,8 @@ export default {
   },
   data () {
     return {
-      shopDataList:[]
+      shopDataList: Json
     };
-  },
-  created(){
-      fetch("../db/products.js")
-        .then(response => response.json(),console.log("res",this.response))
-        .then(data => (this.shopDataList = data),console.log("data",this.shopDataList) );
   }
 }
 </script>
@@ -37,13 +34,6 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+
 
 </style>
