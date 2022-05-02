@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Nav from './nav.vue';
+import Nav from '../components/nav.vue';
 
 export default {
   name: 'Cart',

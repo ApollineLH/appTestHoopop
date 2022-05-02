@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Nav from './nav.vue';
+import Nav from '../components/nav.vue';
 
 export default {
   name: 'Shop',
@@ -25,9 +25,9 @@ export default {
     };
   },
   created(){
-      fetch('products.json')
-        .then(response => response.json())
-        .then(data => (this.shopDataList = data), );
+      fetch("../db/products.js")
+        .then(response => response.json(),console.log("res",this.response))
+        .then(data => (this.shopDataList = data),console.log("data",this.shopDataList) );
   }
 }
 </script>
