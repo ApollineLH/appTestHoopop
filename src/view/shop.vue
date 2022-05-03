@@ -1,11 +1,10 @@
 <template>
   
-  <div class="hello">
+  <div class="wrapper">
 
     <Nav/>
 
-    <h1 class="mb-4 mt-2">Bienvenue sur Microshop</h1>
-   <b-row>
+   <b-row class="mt-5" align-v="center">
        <Cards v-for='item in shopDataList' :key='item.productId' :product='item.productName' :photo='item.productPicture'  :price="item.productPrice"></Cards>
     </b-row>
 

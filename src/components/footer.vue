@@ -4,13 +4,13 @@
 </footer>
     
 </template>
-<style scoped>
+<style >
 .footer {
     
     position: fixed;
     justify-content: center;
     padding: 5px;
-    background-color: #45a1ff;
+    background-color: black;
     color: #fff;
     bottom: 0;
     width: 100%;

@@ -1,11 +1,24 @@
 <template>
-    <b-navbar toggleable type="dark" variant="dark">
-        <b-navbar-brand  href="/shop">Micro shop</b-navbar-brand>
+    <b-navbar toggleable type="dark" variant="dark" >
+        <b-navbar-brand class="mx-auto" href="/shop">Micro shop</b-navbar-brand>
         <b-navbar-nav class="ml-auto">
-            <router-link to='/cart' size="sm" class="mb-2">
+            <b-button @click="gotoCart()" size="sm" class="m-2">
                 <b-icon icon="cart" aria-hidden="true"></b-icon> Cart
-            </router-link>
+            </b-button>
         </b-navbar-nav>
     </b-navbar>
 </template>
 
+<script>
+
+
+export default ({
+    name: 'Nav',
+
+    methods: {
+        gotoCart() {
+            this.$router.push('/cart');
+        }
+    }
+});
+</script>
