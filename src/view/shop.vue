@@ -1,6 +1,6 @@
 <template>
   
-  <div class="wrapper">
+  <div class="body">
 
     <Nav/>
 
@@ -36,7 +36,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
 h1, h2 {
   font-weight: normal;
 }
